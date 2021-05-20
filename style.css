@@ -1,0 +1,164 @@
+html {
+  background-image: linear-gradient(180deg, #000000 2.32%, #000000 44.82%, #1D8160 96.1%);
+  background-attachment: fixed;
+}
+
+body {
+  align-items: center;
+  width: 80%;
+  padding-bottom: 30px;
+  margin:auto;
+  
+}
+
+img{
+  display:block;
+  margin:auto;
+  padding:20px;
+}
+
+.multiselect {
+  width: 100%;
+}
+
+.selectBox {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  height: 50px;
+  background: #4ECCA3;
+  border: 0px;
+}
+
+#select_button {
+  border-radius: 20px;
+}
+
+.selectBox p {
+  position: relative;
+  margin: auto;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+  color: #272343;
+}
+
+.overSelect {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#checkboxes {
+  display:none;
+  position: relative;
+  border: 0px;
+  background-color: #EEEEEE;
+  border-radius: 0px 0px 20px 20px;
+}
+
+#checkboxes label {
+  font-family:Poppins,sans-serif;
+  font-weight: 600;
+  font-size:15px;
+  color: #000000;
+  display: block;
+  padding: 10px;
+}
+
+#checkboxes input{
+  margin-right:10px;
+}
+
+#alpha_block {
+  display:none
+}
+
+#beta_block {
+  display:none
+}
+
+
+
+.alpha_container {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.alpha_heading_container {
+  position: relative;
+  width: 100%;
+  height: 54px;
+  background: #CB3939;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.alpha_heading_container p {
+  position: relative;
+  margin: auto;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 54px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+
+.beta_container {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.beta_heading_container {
+  position: relative;
+  width: 100%;
+  height: 54px;
+  background: #3694C9;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.beta_heading_container p {
+  position: relative;
+  margin: auto;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 54px;
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+#list_container {
+  width: 100%;
+  background-color: #EEEEEE;
+  border-radius: 0px 0px 20px 20px;
+  padding-top:10px;
+  padding-bottom : 20px;
+}
+
+ul {
+  margin: 0px;
+}
+
+li {
+  position: relative;
+  padding-top: 10px;
+  margin: 0px;
+  width: 100%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size:22px;
+  line-height: 22px;
+  color: #232931;
+  text-shadow: -4px 4px 4px rgba(0, 0, 0, 0.25);
+}

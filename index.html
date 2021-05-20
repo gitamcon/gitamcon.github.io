@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brawl</title>
+  <link href="style.css" rel="stylesheet">
+  <link href="buttonStyle.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+
+<body>
+  <img src="img/logo.png">
+
+  <form>
+    <div class="multiselect">
+      <div class="selectBox" id="select_button" onclick="showCheckboxes()">
+        <p>Select Players</p>
+        <!-- <div class="overSelect"></div> -->
+      </div>
+      <div id="checkboxes">
+        <label for="one">
+          <input  type="checkbox" id="one" value="Abhishek">Abhishek</label>
+        <label for="two">
+          <input type="checkbox" id="two" value="Arshad" />Arshad</label>
+        <label for="three">
+          <input type="checkbox" id="three" value="Charan" />Charan</label>
+        <label for="four">
+          <input type="checkbox" id="four" value="Hrithik">Hrithik</label>
+        <label for="five">
+          <input type="checkbox" id="five" value="Shanmukh" />Shanmukh</label>
+        <label for="six">
+          <input type="checkbox" id="six" value="Sreekar" />Sreekar</label>
+        <label for="seven">
+          <input type="checkbox" id="seven" value="Sreeja" />Sreeja</label>
+        <label for="eight">
+          <input type="checkbox" id="eight" value="Varxx" />Vraxx</label>
+      </div>
+    </div>
+  </form>
+
+  <button class = "bubbly-button" type="button" onclick="GetSelected()">Generate Teams</button>
+
+  <div class="alpha_container" id="alpha_block">
+    <div class="alpha_heading_container">
+      <p>Alpha</p>
+    </div>
+    <div id="list_container">
+      <div id="alpha">
+
+      </div>
+    </div>
+  </div>
+
+  <div class="beta_container" id="beta_block">
+
+    <div class="beta_heading_container">
+      <p>Beta</p>
+    </div>
+    <div id="list_container">
+      <div id="beta">
+
+      </div>
+    </div>
+  </div>
+
+  <script src=script.js></script>
+  <script src=buttonScript.js></script>
+</body>
+
+</html>
