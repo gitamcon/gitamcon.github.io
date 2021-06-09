@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="icon" href="favicons/C.png">
+    <title>Circle</title>
+
+
+    <style>
+
+        body {
+            background-color : #f14668;
+            margin-top: 20px;
+            margin-bottom : 20px;
+        }
+
+        .row {
+            display : flex;
+            justify-content: center;
+        }
+
+        .square {
+            background-color : #ffd880;
+            width : 90px;
+            height : 90px;
+            cursor : pointer;
+            margin : 10px;
+            border : none;
+            border-radius: 45px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <audio id="myAudio1">
+        <source src="sounds/audio1.mp3" type="audio/mp3">
+      </audio>
+  <audio id="myAudio2">
+        <source src="sounds/audio2.mp3" type="audio/mp3">
+      </audio>
+  <audio id="myAudio3">
+        <source src="sounds/audio3.mp3" type="audio/mp3">
+      </audio>
+  <audio id="myAudio4">
+        <source src="sounds/audio4.mp3" type="audio/mp3">
+      </audio>
+  <audio id="myAudio5">
+        <source src="sounds/audio5.mp3" type="audio/mp3">
+      </audio>
+  <audio id="myAudio6">
+        <source src="sounds/audio6.mp3" type="audio/mp3">
+      </audio>
+  <audio id="myAudio7">
+        <source src="sounds/audio7.mp3" type="audio/mp3">
+      </audio>
+  <audio id="myAudio8">
+        <source src="sounds/audio8.mp3" type="audio/mp3">
+      </audio>
+  <audio id="myAudio9">
+        <source src="sounds/audio9.mp3" type="audio/mp3">
+      </audio>
+  <audio id="myAudio10">
+        <source src="sounds/audio10.mp3" type="audio/mp3">
+      </audio>
+  <audio id="myAudio11">
+        <source src="sounds/audio11.mp3" type="audio/mp3">
+      </audio>
+  <audio id="myAudio12">
+        <source src="sounds/audio12.mp3" type="audio/mp3">
+      </audio>
+
+    
+    <div id = "3x4">
+    <div class= "row">
+        <a><div class = "square" onclick="playAudio1()"></div></a>
+        <a><div class = "square" onclick="playAudio2()"></div></a>
+        <a><div class = "square" onclick="playAudio3()"></div></a>
+    </div>
+
+    <div class= "row">
+        <a><div class = "square" onclick="playAudio4()"></div></a>
+        <a><div class = "square" onclick="playAudio5()"></div></a>
+        <a><div class = "square" onclick="playAudio6()"></div></a>
+    </div>
+
+    <div class= "row">
+        <a><div class = "square" onclick="playAudio7()"></div></a>
+        <a><div class = "square" onclick="playAudio8()"></div></a>
+        <a><div class = "square" onclick="playAudio9()"></div></a>
+    </div>
+
+    <div class= "row">
+        <a><div class = "square" onclick="playAudio10()"></div></a>
+        <a><div class = "square" onclick="playAudio11()"></div></a>
+        <a><div class = "square" onclick="playAudio12()"></div></a>
+    </div>
+    </div>
+
+    <div id = "3x4">
+        <div class= "row">
+            <a><div class = "square" onclick="playAudio1()"></div></a>
+            <a><div class = "square" onclick="playAudio2()"></div></a>
+            <a><div class = "square" onclick="playAudio3()"></div></a>
+        </div>
+    
+        <div class= "row">
+            <a><div class = "square" onclick="playAudio4()"></div></a>
+            <a><div class = "square" onclick="playAudio5()"></div></a>
+            <a><div class = "square" onclick="playAudio6()"></div></a>
+        </div>
+    
+        <div class= "row">
+            <a href="s5dfa.html"><div class = "square" onclick="playAudio7()"></div></a>
+            <a><div class = "square" onclick="playAudio8()"></div></a>
+            <a><div class = "square" onclick="playAudio9()"></div></a>
+        </div>
+    
+        <div class= "row">
+            <a><div class = "square" onclick="playAudio10()"></div></a>
+            <a><div class = "square" onclick="playAudio11()"></div></a>
+            <a><div class = "square" onclick="playAudio12()"></div></a>
+        </div>
+        </div>
+
+        <div id = "3x4">
+            <div class= "row">
+                <a><div class = "square" onclick="playAudio1()"></div></a>
+                <a><div class = "square" onclick="playAudio2()"></div></a>
+                <a><div class = "square" onclick="playAudio3()"></div></a>
+            </div>
+        
+            <div class= "row">
+                <a><div class = "square" onclick="playAudio4()"></div></a>
+                <a><div class = "square" onclick="playAudio5()"></div></a>
+                <a><div class = "square" onclick="playAudio6()"></div></a>
+            </div>
+        
+            <div class= "row">
+                <a><div class = "square" onclick="playAudio7()"></div></a>
+                <a><div class = "square" onclick="playAudio8()"></div></a>
+                <a><div class = "square" onclick="playAudio9()"></div></a>
+            </div>
+        
+            <div class= "row">
+                <a><div class = "square" onclick="playAudio10()"></div></a>
+                <a><div class = "square" onclick="playAudio11()"></div></a>
+                <a><div class = "square" onclick="playAudio12()"></div></a>
+            </div>
+            </div>
+
+<script>
+        $(".square").mouseenter(function() {
+            const randomColor = Math.floor(Math.random()*16777215).toString(16);
+            $(this).css("background-color", "#" + randomColor);
+        });
+
+        $(".square").mouseleave(function() {
+            $(this).css("background-color", "#ffd880");
+        });
+
+
+
+</script>
+<script src="audio.js"></script>
+</body>
+</html>
